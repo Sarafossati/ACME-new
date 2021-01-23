@@ -1,0 +1,14 @@
+:host {
+  display: block;
+}
+.box-testo{
+    position: absolute;
+    width: 80%;
+    padding:1rem 2rem;
+    background-color: #faf9f9;
+    bottom: 0rem;
+    right: 0px;
+    border-radius: 15px;
+}
+
+

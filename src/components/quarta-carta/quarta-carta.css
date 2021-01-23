@@ -1,0 +1,14 @@
+:host {
+  display: block;
+}
+div{
+  position: relative;
+  overflow: hidden;
+  height: 43em;
+}
+
+@media(min-width:1201px) and (max-width:1599px){
+  div{
+    display: none;
+  }
+}

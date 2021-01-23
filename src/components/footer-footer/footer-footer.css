@@ -1,0 +1,21 @@
+:host {
+  display: block;
+  background-color: #02336E;
+  color:  rgb(195, 191, 191);
+  text-align: center;
+  padding: 30px;
+  font-family: 'Poppins';
+  
+}
+a:-webkit-any-link {
+  color: rgb(195, 191, 191);
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+@media (max-width: 500px) {
+  p{
+    font-size: 12px;
+  }
+}

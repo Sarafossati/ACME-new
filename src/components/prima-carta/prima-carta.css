@@ -1,0 +1,9 @@
+:host {
+  display: block;
+}
+div{
+    position: relative;
+    overflow: hidden;
+    height: 43em;
+}
+

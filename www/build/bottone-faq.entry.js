@@ -1,0 +1,16 @@
+import { r as registerInstance, h, g as getAssetPath } from './index-377eb767.js';
+
+const bottoneFaqCss = ":host{display:block}.dropdown-content{display:none;position:absolute;min-width:160px;z-index:1;text-align:center}.dropbtn{padding:16px;font-size:14px;border:none;width:100%;cursor:pointer;border-bottom:3px solid #bdb8b8d5;border-top:none;background-color:#f9f9f900}.dropbtn:hover{color:#02336E}.dropdown{position:relative;display:inline-block;width:40%;margin-bottom:30px;padding:10px}.dropdown:hover .dropdown-content{display:block}.container{display:flex;flex-direction:row;justify-content:space-around;align-items:center;margin-bottom:50px;background-color:#ffffff;margin-top:2em;padding:20px}.content{font-size:10px;text-align:center;background-color:rgba(240, 235, 235, 0.37);padding:10px;border-radius:5px}img{width:25px;height:auto}@media (max-width: 500px){.dropbtn{padding:12px;font-size:14px;border:none;width:100%;cursor:pointer;border-bottom:1px solid #bdb8b8d5;border-top:none;background-color:#f9f9f900}.dropdown{position:relative;display:inline-block;width:60%;margin-bottom:30px;padding:10px}}@media (max-width: 1000px){.container{display:flex;flex-direction:column;justify-content:center;align-items:center}}";
+
+const BottoneFaq = class {
+    constructor(hostRef) {
+        registerInstance(this, hostRef);
+    }
+    render() {
+        return (h("div", { class: "container" }, h("div", { class: "dropdown" }, h("button", { class: "dropbtn" }, "Assistenza clienti ", h("br", null), h("img", { src: getAssetPath("/assets/freccia.svg"), alt: "" })), h("div", { class: "dropdown-content" }, h("p", { class: "content" }, "Se hai bisogno del nostro aiuto ", h("a", { href: "#" }, "contattaci"), " e cercheremo di risolvere i tuoi dubbi nel minor tempo possibile. I nostri operatori sono felici di essere al tuo servizio."))), h("br", null), h("div", { class: "dropdown" }, h("button", { class: "dropbtn" }, "Investimento e risparmio ", h("br", null), h("img", { src: getAssetPath("/assets/freccia.svg"), alt: "" })), h("div", { class: "dropdown-content" }, h("p", { class: "content" }, "Se hai bisogno di un consulto: ", h("a", { href: "#" }, "Piano di risparmio"), " e ", h("a", { href: "#" }, "Prodotto investimento"), ". I nostri operatori ti ricontatteranno il prima possibile!"))), h("br", null), h("div", { class: "dropdown" }, h("button", { class: "dropbtn" }, "Regolamenti e rendiconti ", h("br", null), h("img", { src: getAssetPath("/assets/freccia.svg"), alt: "" })), h("div", { class: "dropdown-content" }, h("p", { class: "content" }, "In questa sezione puoi visualizzare: ", h("a", { href: "#" }, "Fondi interni"), ", ", h("a", { href: "#" }, "Regolamenti"), ", ", h("a", { href: "#" }, "Rendiconti"), " e ", h("a", { href: "#" }, "Rendimenti"), ". Non esitare a contattarci per ulteriori dubbi. "))), h("br", null), h("div", { class: "dropdown" }, h("button", { class: "dropbtn" }, "Partnership ", h("br", null), h("img", { src: getAssetPath("/assets/freccia.svg"), alt: "" })), h("div", { class: "dropdown-content" }, h("p", { class: "content" }, "I principali Partners di ACME sono: Scuola Mohole, CheBanca, Della Porta Broker, Agea, Mercedes-Benz Financial, RCI Banque.")))));
+    }
+    static get assetsDirs() { return ["/assets"]; }
+};
+BottoneFaq.style = bottoneFaqCss;
+
+export { BottoneFaq as bottone_faq };
